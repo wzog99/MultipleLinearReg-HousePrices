@@ -28,9 +28,9 @@ Creating a linear model will enable future price prediction on houses, given the
 - R2: 0.9019800668694578
 
 #### AFTER:
-rmse: 22242.281922013546
-Adjusted R2: 0.7594046798964573
-R2: 0.8998751696847417
+- rmse: 22242.281922013546
+- Adjusted R2: 0.7594046798964573
+- R2: 0.8998751696847417
 
 By introducing an additional piece of data to the model I was able to improve the RSME by ~$1,800, without jepordizing the integrity of the model
 
