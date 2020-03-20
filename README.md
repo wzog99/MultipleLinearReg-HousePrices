@@ -21,7 +21,8 @@ Creating a linear model will enable future price prediction on houses, given the
     - Optimizing alpha based on adjusted alpha will achive a more generalized model and remove unneeded terms
     - Best alpha ~ 1.34 (But this bound to change with adjustments to code)
 
-### New progress
+## New progress
+#### Theory: The amount that people are willing to spend is going to be affected by the interest rate that they obtain to borrow money for the purchase. Thus, the additional mortgage rate data, will have a significant effect on predicting sale price.
 #### BEFORE adding avg monthly mortgage rates:
 - rmse: 24016.52425600875
 - Adjusted R2: 0.765931653457979
@@ -34,5 +35,15 @@ Creating a linear model will enable future price prediction on houses, given the
 
 By introducing an additional piece of data to the model I was able to improve the RSME by ~$1,800, without jepordizing the integrity of the model
 
+#### Theory: The concept of supply and demand. If there are more houses/living situations availible, the price will decrease because of an increase supply and a stationary demand. 
+#### BEFORE adding newly build housing data:
+- rmse: 22242.281922013546
+- Adjusted R2: 0.7594046798964573
+- R2: 0.8998751696847417
 
+#### AFTER:
+- rmse: 23717.64270306713
+- Adjusted R2: 0.7319021333025424
+- R2: 0.8880982817262786
 
+The additional housing permit data did not improve the accuracy of the model, and the error in evaluation increased. 
